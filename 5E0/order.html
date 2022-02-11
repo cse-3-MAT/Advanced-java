@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>order</title>
+        <style>
+            td{
+                padding: 10px;
+                
+            }
+            .container{
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h2>Welcome to the Order Management System</h2>
+            <div class="container">
+                <form method="POST" action="http://localhost:8080/5E0/order">
+                  <table>
+                    <tr>
+                      <td><label>Customer Id:</label></td>
+                      <td><input type="text" name="custid" placeholder="your customer id"></td>
+                    </tr>
+                   
+                    <tr>
+                      <td><label>Order Id:</label></td>
+                      <td><input type="text" name="orderid" placeholder="your order id"></td>
+                    </tr>
+
+                    <tr>
+                      <td><label>Quantity:</label></td>
+                      <td><input type="text" name="quantity"></td>
+                    </tr>
+
+                   
+                    <tr>
+                      <td><label>Model</label></td>
+                      <td>
+                        <select name="model">
+                          <option value="Type 5">Type 5</option>
+                          <option value="Type 4">Type 4</option>
+                          <option value="Type 3">Type 3</option>
+                          <option value="Type 2">Type 2</option>
+                          <option value="Type 1">Type 1</option>
+                        </select>
+                      </td>
+                    </tr>
+                   
+                    <tr>
+                      <td><button type="submit">Order</button></td>
+                      <td><button type="reset">Cancel</button></td>
+                    </tr>
+                  </table>
+                </form>
+              </div>
+        </center>
+    </body>
+</html>
